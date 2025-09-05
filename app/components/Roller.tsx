@@ -124,10 +124,10 @@ const Roller = forwardRef<RollerHandle, RollerProps>(
     return (
       <div style={{ width: "100%" }}>
         {rollerData.isRunning
-          ? "The truth is truthing your life decision..."
+          ? "⏳ The truth is truthing your life decision..."
           : rollerData.candidateWinner
-          ? "We have a winner!"
-          : "Click GO! to start"}
+          ? "🎉 We have a winner!"
+          : "🔮 Click GO! to start"}
         <Typography variant="h3" noWrap>
           {rollerData.candidateWinner ?? arrayData[0] ?? "Add items to start"}
         </Typography>
